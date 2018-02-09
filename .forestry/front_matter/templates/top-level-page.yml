@@ -1,23 +1,8 @@
 ---
 hide_body: false
 fields:
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: ''
 - name: title
   label: Title
-  type: text
-  hidden: false
-  default: ''
-- name: slug
-  label: Slug
-  type: text
-  hidden: false
-  default: ''
-- name: path
-  label: Path
   type: text
   hidden: false
   default: ''
@@ -31,3 +16,21 @@ fields:
   type: text
   hidden: false
   default: ''
+- name: slug
+  label: Slug
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+  description: url
+- name: path
+  label: Path
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: default
