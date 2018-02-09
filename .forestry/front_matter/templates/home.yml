@@ -1,0 +1,33 @@
+---
+hide_body: false
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: slug
+  label: Slug
+  type: text
+  hidden: false
+  default: ''
+- name: path
+  label: Path
+  type: text
+  hidden: false
+  default: ''
+- name: meta-title
+  label: Meta title
+  type: text
+  hidden: false
+  default: ''
+- name: meta-description
+  label: Meta description
+  type: text
+  hidden: false
+  default: ''
