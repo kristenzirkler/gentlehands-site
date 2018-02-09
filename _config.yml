@@ -1,0 +1,10 @@
+highlighter: rouge
+github: [Repository metadata]
+
+baseurl: "https://kristenzirkler.github.io/gentlehands-site"
+
+# Sass
+sass:
+  sass_dir: scss
+  style: :expanded
+  line_numbers: true
