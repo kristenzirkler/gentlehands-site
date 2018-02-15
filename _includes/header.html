@@ -1,9 +1,11 @@
-<div class="site-navigation">
-  <div class="inner">
-    <a class="logo" href="{{ site.baseurl }}/">logo</a>
+<header>
+<div class="site-header">
+  <div class="row">
+  	<div class="column sm-one-half"><a class="logo" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo.png" alt="Grooming By Gentle Hands Mobile Pet Grooming" /></a></div>
+  	<div class="column sm-one-half align-right">
     <a class="mobile-toggle" href="{{ site.baseurl }}/"><i class="fa fa-bars"></i></a>
-    <ul class="nav">
-        <li><a href="{{ site.baseurl }}/content-page">Content Page</a></li>
-    </ul>
+    {% include navigation.html layout="header" %}
+	</div>
   </div>
 </div>
+</header>

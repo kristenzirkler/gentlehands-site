@@ -1,0 +1,60 @@
+.video-player__link {
+  position: relative;
+  display: block;
+  border: 4px solid $border-color;
+  .label {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    font-size: 50px;
+    opacity: .6;
+  }
+  img {
+    width: 100%;
+  }
+  &:hover {
+    border-color: $main-color;
+    .label {
+      opacity: 1;
+    }
+  }
+}
+.video-player__modal {
+  display: none;
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  background: #000;
+  z-index: 10000;
+  iframe {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}
+.video-player__close {
+  background: transparent;
+  opacity: .7;
+  color: $white;
+  border: none;
+  font-size: 24px;
+  padding: 20px;
+  position: absolute;
+  top:0;
+  right:0;
+    z-index: 2;
+  &:hover, &:active, &:focus {
+    opacity: 1;
+    border: none;
+    outline: 0;
+  }
+
+}

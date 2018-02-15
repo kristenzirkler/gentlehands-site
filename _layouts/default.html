@@ -24,8 +24,10 @@
 
 <script src="{{ site.baseurl }}/js/vendor/modernizr-2.6.2.min.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Merriweather:900|Roboto:400,700" rel="stylesheet">
+
 <!-- replace with only the icons needed -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script defer src="//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </head>
 
@@ -34,24 +36,27 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<div class="site-wrap">
+
 {% include header.html %}
 
-{% if page.title != "Home" %}
-<div class="page-header">
-  <div class="inner">
-    <h1>{{page.title}}</h1>
-  </div>
-</div>
-{% endif %}
-{% if page.title == "Home" %}
-{% include home-hero.html %}
-{% endif %}
-
 <div class="content">
-{{ content }}
+
+  <div class="row">
+    <div class="column md-one-third">
+      {% include hours-contact-info.html %}
+    </div>
+    <div class="column md-two-thirds">
+      <section class="main-content">
+      {{ content }}
+      </section>
+    </div>
+  </div>
+
 </div>
 
 {% include footer.html %}
+</div><!-- .wrap -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/js/main.js"></script>
@@ -67,5 +72,8 @@
   ga('send', 'pageview');
 
 </script>
+
+{% include video-player.html section='modal' %}
+
 </body>
 </html>

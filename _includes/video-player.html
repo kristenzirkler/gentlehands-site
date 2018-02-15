@@ -1,0 +1,40 @@
+{% comment %}
+
+Video Player is jQuery Dependent
+
+{% endcomment %}
+{% if include.section == 'link' %}
+	{% if include.videoID %}
+	<a href="#" rel="video-player__open" data-videoid="{{ include.videoID }}" class="video-player__link">
+	    <span class="label"><i class="fas fa-play-circle"></i></span>
+	    <img src="{{ site.baseurl }}/img/video-{{ include.videoID }}.jpg" />
+	</a>
+	{% else %}
+	<div class="alert">No 'videoID' declared with include.</div>
+	{% endif %}
+{% elsif include.section == 'modal' %}
+<div id="video-player__modal" class="video-player__modal">
+    <button class="video-player__close" rel="video-player__close">Close</button>
+    <iframe allowfullscreen="" frameborder="0" height="100%" width="100%"></iframe>
+</div><!-- /.video-modal -->
+<script>
+$(document).ready(function(){
+  // Video Modal
+  $('[rel="video-player__open"]').click(function(event) {
+    event.preventDefault();
+    var videoID = $(this).attr('data-videoid');
+    location.hash = 'video';
+    $('#video-player__modal').show();
+    $('#video-player__modal iframe').attr('src','//www.youtube.com/embed/'+videoID+'?autoplay=1&autohide=1&modestbranding=1&rel=0&showinfo=0&wmode=transparent');
+    $('body').css('overflow','hidden').css('position','relative');
+  });
+  $('[rel="video-player__close"]').click(function(event) {
+    $('#video-player__modal').hide();
+    $('#video-player__modal iframe').attr('src','');
+    $('body').css('overflow','visible').css('position','static');
+  });
+});
+</script>
+{% else %}
+<div class="alert">No 'section' declared with include.</div>
+{% endif %}

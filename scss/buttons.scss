@@ -1,17 +1,33 @@
-.button {
-  padding: 1em 1.5em;
-  color: #fff;
+.cta-button {
+  padding: 0 14px;
+  line-height: $field-height;
+  color: $white;
   display: inline-block;
   background: $main-color;
   font-family: $accent-font;
   text-transform: uppercase;
 
-  display: block;
   text-align: center;
+  font-size: 18px;
 
   @include transition(all .3s);
   &:hover {
-    color: #fff;
+    color: $white;
     background: darken($main-color,10);
+  }
+  &.block {
+    display: block;
+  }
+  &.small {
+    line-height: $field-height-sm;
+    font-size: 14px;
+  }
+  &.secondary {
+    background: $brand-gold;
+    color: $gray;
+    &:hover {
+      color: $black;
+      background: lighten($brand-gold,8);
+    }
   }
 }
