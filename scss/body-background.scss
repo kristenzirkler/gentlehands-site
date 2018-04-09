@@ -1,0 +1,36 @@
+body {
+    position: relative;
+}
+.body-background {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    overflow: hidden;
+    z-index: -1;
+    .triangle-1 {
+        width: 90%;
+        .triangle-up-left:after {
+            border-left-color: $brand-teal-light;
+        }
+    }
+    .triangle-2 {
+        width: 20%;
+        margin-left: 80%;
+        .triangle-left:after {
+            border-right-color: $brand-gold-light;
+        }
+    }
+    .triangle-3 {
+        //width: 90%;
+        .triangle-down-left:after {
+            border-bottom-color: $brand-teal-light;
+        }
+    }
+    .paws {
+        background-image: url(../img/pawbg-lg.png);
+        background-size: 1200px 1136px;
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 0; right: 0;
+    }
+}

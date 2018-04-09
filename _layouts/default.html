@@ -36,10 +36,14 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="site-wrap">
-
 {% include header.html %}
+{% include hero.html %}
 
+<div class="site-wrap">
+      <section class="main-content">
+      {{ content }}
+      </section>
+{%comment%}
 <div class="content">
 
   <div class="row">
@@ -54,9 +58,10 @@
   </div>
 
 </div>
+{%endcomment%}
+</div><!-- .wrap -->
 
 {% include footer.html %}
-</div><!-- .wrap -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/js/main.js"></script>
@@ -74,6 +79,7 @@
 </script>
 
 {% include video-player.html section='modal' %}
+{% include body-background.html %}
 
 </body>
 </html>

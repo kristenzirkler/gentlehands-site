@@ -6,12 +6,18 @@ $baseurl: '{{ site.baseurl }}';
 @import '_reset';
 @import '_simple-grid';
 @import '_helpers';
+@import '_css-shapes';
 
 @import 'typography';
 @import 'buttons';
 
 @import 'site-frame';
-@import 'main-content';
+@import 'body-background';
+@import 'hero';
+@import 'services';
+@import 'about';
+@import 'before-after';
+//@import 'main-content';
 @import 'hours-contact-info';
-@import 'service-area';
+//@import 'service-area';
 @import 'video-player';

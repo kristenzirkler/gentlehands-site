@@ -1,4 +1,10 @@
 .hours-contact-info {
+  padding: 70px 0;
+  .section-header {
+    margin-bottom: 30px;
+  }
+}
+/*.hours-contact-info {
   font-family: $accent-font;
   background: $main-color;
   color: $white;
@@ -13,4 +19,8 @@
   h3 {
     margin-bottom: 10px;
   }
+}
+*/
+.service-map {
+  max-width: 200px;
 }

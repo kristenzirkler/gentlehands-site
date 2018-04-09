@@ -1,0 +1,21 @@
+.hero {
+	padding: 50px 0;
+	img {
+		max-width: 600px;
+	}
+	.description {
+		font-size: 24px;
+		margin-bottom: 60px;
+	}
+	.small-statement {
+		margin-bottom: 30px;
+	}
+}
+// Responsive
+@media all and (min-width: 420px) {
+
+}
+
+@media all and (min-width: 800px) {
+
+}

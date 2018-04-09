@@ -1,0 +1,28 @@
+.services {
+	margin: 0 -20px;
+}
+.service-item {
+	background: $white;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: 0 0 20px rgba($black,.2);
+	.size-img {
+		margin-bottom: 20px;
+	}
+	em, span {
+		display: block;
+		font-style: normal;
+	}
+	span {
+		font-size: 30px;
+		font-family: $accent-font;
+	}
+}
+// Responsive
+@media all and (min-width: 420px) {
+
+}
+
+@media all and (min-width: 800px) {
+
+}
