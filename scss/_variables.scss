@@ -33,6 +33,9 @@ $field-height: 40px;
 $field-height-lg: 50px;
 $field-height-sm: 30px;
 
+$z-index-nav: 1000;
+$z-index-modal: 1001;
+
 @mixin transition($transitions) {
     -webkit-transition: $transitions;
     -moz-transition: $transitions;

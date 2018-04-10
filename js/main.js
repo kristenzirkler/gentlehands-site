@@ -1,10 +1,11 @@
 // Main JS File Unminified 
 $(function(){
 
-	// Mobile Nav
-	$('.mobile-toggle').click(function(event) {
-	    event.preventDefault();
-		$('.nav').toggleClass('nav-open');
+	// Navigation Toggle
+	$('[rel="nav-toggle"]').click(function(event) {
+	  event.preventDefault();
+		$('.main-nav').toggleClass('nav-open');
+    $('body').toggleClass('nav-open-body');
 	});
 
   /*

@@ -29,10 +29,42 @@ body {
 		line-height: $nav-height;
 		height: $nav-height;
 	}
-	.nav {
-		display: none;
+}
+.nav-open-body {
+	overflow: hidden;
+}
+.main-nav {
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	background: $brand-gold;
+	z-index: $z-index-nav;
+	font-size: 20px;
+	.close {
+		position: absolute; 
+		top: 20px; right: 20px;
+		z-index: 2;
+	}
+	ul {
+		height: 250px;
+		position: absolute;
+		margin: auto;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+	}
+	li {
+		padding: 10px 10px;
+	}
+	a {
+		color: $black;
+	}
+	&.nav-open {
+		display: block;
 	}
 }
+
 .site-footer {
 	padding: 20px 10px;
 	border-top: 3px solid $main-color;
