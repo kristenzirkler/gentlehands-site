@@ -3,6 +3,10 @@
   .section-header {
     margin-bottom: 30px;
   }
+  .phone {
+    color: $black;
+    font-family: $accent-font;
+  }
 }
 /*.hours-contact-info {
   font-family: $accent-font;
@@ -21,6 +25,17 @@
   }
 }
 */
+.service-area {
+  .row {
+    background: $white;
+    border: 2px solid $brand-gold;
+    padding: 10px;
+  }
+  .zip-codes li {
+    width: 50%;
+    float: left;
+  }
+}
 .service-map {
-  max-width: 200px;
+  max-width: 240px;
 }
