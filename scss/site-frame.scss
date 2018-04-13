@@ -64,10 +64,13 @@ body {
 		display: block;
 	}
 }
-
 .site-footer {
-	padding: 20px 10px;
-	border-top: 3px solid $main-color;
+	padding: 20px 0;
+	background: $main-color;
+	color: $white;
+	a { 
+		color: $white;
+	}
 }
 // Responsive
 @media all and (min-width: 420px) {
