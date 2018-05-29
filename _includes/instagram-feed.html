@@ -55,6 +55,13 @@
 // ------------------------------------------------------
 
 jQuery(document).ready(function($){
+  var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'redcupliving',
+        clientId: '3e7dc196948c4464bca6bd9a19ac7df2'
+    });
+    feed.run();
+  /*
     var feed = new Instafeed({
       get: 'user',
       userId: 135419, //berzirkler
@@ -64,5 +71,6 @@ jQuery(document).ready(function($){
       //template: '<a href="{{link}}" target="_blank"><span style="background-image:url({{image}});">&nbsp;</span><img src="/spacer-1x1.png" /></a>'
     });
     feed.run();
+    */
 });
 </script>
