@@ -1,4 +1,4 @@
-<br>
+{%comment%}<br>
 <style>
 /* TEMP 
 .instagram-feed {
@@ -55,14 +55,6 @@
 // ------------------------------------------------------
 
 jQuery(document).ready(function($){
-  var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'redcupliving',
-      clientId: '3e7dc196948c4464bca6bd9a19ac7df2',//Marketing Site Client Feed Hastags
-      accessToken: '135419.1677ed0.4d7566c238094e98baa47a2c20a61eb7',
-    });
-    feed.run();
-  /*
     var feed = new Instafeed({
       get: 'user',
       userId: 135419, //berzirkler
@@ -72,6 +64,6 @@ jQuery(document).ready(function($){
       //template: '<a href="{{link}}" target="_blank"><span style="background-image:url({{image}});">&nbsp;</span><img src="/spacer-1x1.png" /></a>'
     });
     feed.run();
-    */
 });
 </script>
+{%endcomment%}
