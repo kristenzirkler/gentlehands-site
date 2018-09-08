@@ -1,0 +1,19 @@
+.social-links {
+	margin: 20px 0;
+	a {
+		display: inline-block;
+		line-height: 29px;
+	}
+	i, em {
+		font-size: 20px;
+		display: inline-block;
+		width: 40px;
+		text-align: center;
+	}
+	em {
+		font-style: normal;
+		font-weight: bold;
+		font-family: arial;
+		font-size: 16px;
+	}
+}

@@ -8,7 +8,7 @@ $(function(){
     $('body').toggleClass('nav-open-body');
 	});
 
-  $('.nav-links a').click(function(event) {
+  $('[rel="scroll-to-anchor"]').click(function(event) {
     var link = $(this).attr('href'),
         link = link.replace('{{ site.baseurl }}/','');
     $('.main-nav').toggleClass('nav-open');

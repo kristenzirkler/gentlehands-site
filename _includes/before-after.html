@@ -1,25 +1,26 @@
 <a name="photos"></a>
 <div class="before-after">
   <div class="inner">
-  	<!--h2 class="section-header"><span>Before &amp; After</span></h2-->
-  	<div class="row collapse">
-  		<div class="column md-one-half align-center">
-  			<div>Client Stories</div>
-  			<h3 class="section-header"><span>Meet Maxine</span></h3>
-  			<p>
-  				5 Years Old<br><br>
-  				Westie Mix<br><br>
-  				Loves Peanut Butter<br>
-  				&amp; Ear Scratches
-  			</p>
-  			<div class="paging row collapse">
-  				<div class="column sm-one-half"><a href="#">< Prev</a></div>
-  				<div class="column sm-one-half"><a href="#">Next ></a></div>
-  			</div>
-  		</div>
-  		<div class="column md-one-half">
-  			<img src="{{ site.baseurl }}/img/before-after-TEMP.jpg" alt="Client Stories: Maxine" />
-  		</div>
-	</div>
+
+    <div class="row collapse">
+      <div class="column md-one-half align-center">
+        <div>Client Stories</div>
+      </div>
+    </div>
+
+    <div class="animal-slideshow">
+      <div class="all-slides">
+{% assign sortedArticles = site.data.client-stories | sort: 'name' %}
+{% for animal in sortedArticles limit: 1 %}
+  {% include one-animal.html name=animal.name about=animal.about slug=animal.slug %}
+{% endfor %}
+      </div>
+    </div>
+
+    <!--div class="paging row collapse">
+      <div class="column sm-one-half"><a href="#">< Prev</a></div>
+      <div class="column sm-one-half"><a href="#">Next ></a></div>
+    </div-->
+
   </div>
 </div>

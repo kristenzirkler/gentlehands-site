@@ -4,19 +4,14 @@
   	<div class="row collapse">
   		<div class="column md-one-half align-center">
 			<h3><span>Hours</span></h3>
-			<p><span>7 days a week </span><span>8am to 6pm</span></p>
-<br>
+			<p><span>7 Days a Week </span><span>8am to 6pm</span></p>
+<br> 
 			<h3><span>Schedule an Appointment</span></h3>
-			<p><a href="#" class="cta-button large">Book Online</a></p>
+			<p><a href="{{ site.baseurl }}/appointments.html" class="cta-button large">Book Online</a></p>
 
 			<p>or just text or call</p>
 			<p><h3><a class="phone" href="tel:+14804400093">480.440.0093</a></h3></p>
-
-			<div>
-				<a href="#">Facebook</a>
-				<a href="#">Home Guide</a>
-				<a href="#">Instagram</a>
-			</div>
+			{% include social-links.html %}
   		</div>
   		<div class="column md-one-half align-center">
   			{% include service-area.html %}

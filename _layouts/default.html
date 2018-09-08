@@ -37,7 +37,10 @@
 <![endif]-->
 
 {% include header.html %}
+{% if page.slug == "home" %}
 {% include hero.html %}
+{% else %}
+{% endif %}
 
 <div class="site-wrap">
       <section class="main-content">

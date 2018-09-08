@@ -2,17 +2,13 @@
     <div class="row">
   		<div class="column md-one-forth">
   			<a class="logo" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo.png" alt="Grooming By Gentle Hands Mobile Pet Grooming" /></a>
-  			<div class="social-links">
-  				<a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><br>
-  				<a href="#"><em>HG</em>Home Guide</a><br>
-  				<a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-  			</div>
+  			{% include social-links.html %}
   		</div>
   		<div class="column md-three-forths">
         <div class="best-of"><img style="width:150px;float:right;" src="https://cdn.homeguide.com/assets/images/tmp/homeguide-2017.png" width="150" alt="Dog Groomers Phoenix"/></div>
-  			<p>Hours: 7 days a week, 8am to 6pm</p>
+  			<p>Hours: 7 Days a Week, 8am to 6pm</p>
   			<p>
-  				To schedule an appointment <a href="#">Book Online</a> or text <a class="phone" href="tel:+14804400093">480.440.0093</a>
+  				To schedule an appointment <a href="{{ site.baseurl }}/appointments.html">Book Online</a> or text <a class="phone" href="tel:+14804400093">480.440.0093</a>
   			</p>
   		</div>
 	</div>

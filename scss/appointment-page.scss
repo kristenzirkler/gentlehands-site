@@ -1,0 +1,33 @@
+.load-booking {
+	position: relative;
+	min-height: 400px;
+}
+.booking-ctr {
+	z-index: 2;
+	position: relative;
+}
+.loading-icon {
+	font-size: 60px;
+	height: 100px;
+	line-height: 100px;
+	margin: auto;
+	display: block;
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	text-align: center;
+	z-index: 1;
+	color: $main-color;
+}
+#externalBookingPluginContainer {
+	max-width: 100% !important;
+}
+
+// Responsive
+@media all and (min-width: 420px) {
+
+}
+
+@media all and (min-width: 800px) {
+
+}
