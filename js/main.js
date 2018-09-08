@@ -8,6 +8,25 @@ $(function(){
     $('body').toggleClass('nav-open-body');
 	});
 
+  $('.nav-links a').click(function(event) {
+    var link = $(this).attr('href'),
+        link = link.replace('{{ site.baseurl }}/','');
+    $('.main-nav').toggleClass('nav-open');
+    $('body').toggleClass('nav-open-body');
+    scrollPageToAnchor(link);
+  });
+
+function scrollPageToAnchor(anchorID){
+  var aTagName = '#'+anchorID,
+    aTag = $(anchorID).offset();
+
+  var aTagTop = aTag.top,
+    aTagAddOffset = 10,
+    aTagOffset = aTagTop-aTagAddOffset;
+
+  $('html,body').animate({scrollTop: aTagOffset},'slow');
+}
+
   /*
    * Video Player Modal
    * 
