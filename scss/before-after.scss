@@ -4,19 +4,53 @@
 	.section-header {
 		margin-bottom: 30px;
 	}
+	.view-all {
+		margin-top: 30px;
+		text-align: center;
+	}
 }
 .one-animal {
-	float: left;
 	p {
 		max-width: 200px;
 		margin: 0 auto;
 	}
+	img {
+		margin-right: 20px;
+	}
+	&.layout-page {
+		margin-bottom: 30px;
+	}
 }
 .animal-slideshow {
-	//width: 100%;
-	//overflow: hidden;
-	.all-slides {
-	//	width: 30000px;
+	position: relative;
+}
+.slick-slider {
+	.one-animal {
+		opacity: 0;
+		&.slick-current {
+			opacity: 1;
+			transition: all 0s;
+			transition-delay: .2s;
+		}
+	}
+
+}
+.slider-arrow {
+	width: 25%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: 5;
+	a {
+		font-size: 30px;
+		cursor: pointer;
+	}
+	&.slider-prev {
+		text-align: right;
+	}
+	&.slider-next {
+		left: 25%;
 	}
 }
 // Responsive

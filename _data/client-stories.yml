@@ -1,3 +1,19 @@
+- name: 'Baxter'
+  slug: 'baxter'
+  about: '3 Years Old<br><br>Golden Retriever<br><br>Likes Swimming and Tennis'
+
+- name: 'Baily'
+  slug: 'baily'
+  about: '4 Years Old<br><br>Large Mix Breed<br><br>Loves Dog Park Dates & Snacking on Carrots'
+
+- name: 'Tobie'
+  slug: 'tobie'
+  about: '18 Weeks Old<br><br>Shihtzu Mix<br><br>Likes Exploring Under Counches & Chew Electrical Cords'
+
+- name: 'Bailey'
+  slug: 'bailey'
+  about: '8 Years Old<br><br>Chihuahua Mix<br><br>Nervous Little Man Comes to Us All the Way From Prescott'
+
 - name: 'Gremlin'
   slug: 'gremlin'
   about: '13 Years Old <br><br>Terrier Mix<br><br>Likes Warm Baths & Chewing on Cat Toys'
@@ -5,10 +21,6 @@
 - name: 'Roscoe'
   slug: 'roscoe'
   about: '8 Years Old<br><br>Shihtzu<br><br>Enjoys Chasing His Tail and Barking at Neighbor Cats'
-
-- name: 'Baxter'
-  slug: 'baxter'
-  about: '3 Years Old<br><br>Golden Retriever<br><br>Likes Swimming and Tennis'
 
 - name: 'Boo'
   slug: 'boo'
@@ -18,21 +30,13 @@
 #  slug: 'fred'
 #  about: '6 Years Old<br><br>Shihtzu<br><br>Like Licking Faces & Feet'
 
-- name: 'Bailey'
-  slug: 'bailey'
-  about: '8 Years Old<br><br>Chihuahua Mix<br><br>Nervous Little Man Comes to Us All the Way From Prescott'
-
-#- name: 'Miss Maggie May'
-#  slug: 'maggie'
-#  about: '7 Years Old<br><br>Yorkie<br><br>Girly Girl Whos Favorite Color is Pink'
+- name: 'Miss Maggie May'
+  slug: 'maggie'
+  about: '7 Years Old<br><br>Yorkie<br><br>Girly Girl Whos Favorite Color is Pink'
 
 #- name: 'Cooper'
 #  slug: 'cooper'
 #  about: '4 Years Old<br><br>Cockapoo<br><br>Enjoys Squeak Toys & Playing in the Mud'
-
-- name: 'Tobie'
-  slug: 'tobie'
-  about: '18 Weeks Old<br><br>Shihtzu Mix<br><br>Likes Exploring Under Counches & Chew Electrical Cords'
 
 - name: 'Troy'
   slug: 'troy'
@@ -41,7 +45,3 @@
 - name: 'Belle'
   slug: 'belle'
   about: '13 Years Old<br><br>Shihtzu<br><br>Enjoys Long Naps & Watching Jeopardy'
-
-- name: 'Baily'
-  slug: 'baily'
-  about: '4 Years Old<br><br>Large Mix Breed<br><br>Loves Dog Park Dates & Snacking on Carrots'

@@ -6,6 +6,14 @@ path: "../"
 meta-title: Before & After
 meta-description: Before & After
 ---
-<div class="slide">
-photos
+<div class="slide page">
+	<div class="inner">
+	  	<h1 class="section-header"><span>Client Stories</span></h1>
+	  	<p class="page-intro">Before and after photos of some of our favorite furry clients.</p>
+
+{% assign sortedArticles = site.data.client-stories %}
+{% for animal in sortedArticles %}
+  {% include one-animal.html name=animal.name about=animal.about slug=animal.slug layout='page' %}
+{% endfor %}
+	</div>
 </div>

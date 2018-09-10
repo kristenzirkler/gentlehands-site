@@ -10,14 +10,17 @@ $baseurl: '{{ site.baseurl }}';
 
 @import 'typography';
 @import 'buttons';
+@import 'slider';
 
 @import 'site-frame';
 @import 'body-background';
+@import 'main-content';
+
+// Home Pieces
 @import 'hero';
 @import 'services';
 @import 'about';
 @import 'before-after';
-//@import 'main-content';
 @import 'hours-contact-info';
 @import 'social-links';
 @import 'video-player';

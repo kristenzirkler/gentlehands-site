@@ -1,26 +1,34 @@
 <a name="photos"></a>
-<div class="before-after">
+{% comment %}
+{% assign sortedArticles = site.data.client-stories %}
+{% for animal in sortedArticles %}
+{% if animal.slug == "tobie" %}
+  {% include one-animal-new.html name=animal.name about=animal.about slug=animal.slug layout="slide" %}
+{% endif %}
+{% endfor %}
+{% endcomment %}
+<div class="before-after slide">
   <div class="inner">
-
-    <div class="row collapse">
-      <div class="column md-one-half align-center">
-        <div>Client Stories</div>
-      </div>
-    </div>
 
     <div class="animal-slideshow">
       <div class="all-slides">
-{% assign sortedArticles = site.data.client-stories | sort: 'name' %}
-{% for animal in sortedArticles limit: 1 %}
-  {% include one-animal.html name=animal.name about=animal.about slug=animal.slug %}
+{% assign sortedArticles = site.data.client-stories %}
+{% for animal in sortedArticles %}
+  {% include one-animal.html name=animal.name about=animal.about slug=animal.slug layout="slide" %}
 {% endfor %}
       </div>
     </div>
-
-    <!--div class="paging row collapse">
-      <div class="column sm-one-half"><a href="#">< Prev</a></div>
-      <div class="column sm-one-half"><a href="#">Next ></a></div>
-    </div-->
-
+    <div class="view-all"><a class="cta-button small" href="{{ site.baseurl }}/photos.html">View All Client Stories</a>
   </div>
 </div>
+<script>
+$(document).ready(function(){
+  $('.all-slides').slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: '<div class="slider-arrow slider-prev"><a><i class="fas fa-arrow-circle-left"></i></a></div>',
+    nextArrow: '<div class="slider-arrow slider-next"><a><i class="fas fa-arrow-circle-right"></i></a></div>',
+    appendArrows: '.animal-slideshow'
+  });
+});
+</script>

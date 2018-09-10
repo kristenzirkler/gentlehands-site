@@ -1,10 +1,17 @@
 // You can use url($baseurl+'/img/sitebg.jpg'); because it is added in style.scss
-.main-content {
-	padding: 20px;
-	p {
-		max-width: 600px;
+.page {
+	h1 {
+		margin: 30px 0;
 	}
-
+	.page-intro {
+		font-size: 22px;
+		text-align: center;
+		margin: 0 auto 60px;
+	}
+}
+.slide .inner {
+	max-width: $page-size;
+	margin: 0 auto;
 }
 // Responsive
 @media all and (min-width: 420px) {

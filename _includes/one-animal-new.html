@@ -1,4 +1,7 @@
 <div class="row one-animal layout-{{ include.layout }}">
+  <div class="column md-one-forth" style="background-image: url({{ site.baseurl }}/img/animal-{{ include.slug }}-before.jpg);">
+  	Before
+  </div>
   <div class="column md-one-half align-center">
   	{% if include.layout == "slide" %}
   	<p>Client Stories</p>
@@ -10,7 +13,7 @@
       {{ include.about }}
     </p>
   </div>
-  <div class="column md-one-half">
-    <img src="{{ site.baseurl }}/img/before-after-{{ include.slug }}.jpg" alt="Client Stories: {{ include.name }}" />
+  <div class="column md-one-forth" style="background-image: url({{ site.baseurl }}/img/animal-{{ include.slug }}-after.jpg);">
+  	After
   </div>
 </div>
