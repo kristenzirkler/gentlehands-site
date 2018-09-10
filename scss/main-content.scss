@@ -1,12 +1,24 @@
 // You can use url($baseurl+'/img/sitebg.jpg'); because it is added in style.scss
 .page {
+	margin-bottom: 30px;
 	h1 {
-		margin: 30px 0;
+		margin: 40px 0 20px;
+		padding: 0 10px;
 	}
 	.page-intro {
-		font-size: 22px;
+		font-size: 18px;
 		text-align: center;
-		margin: 0 auto 60px;
+		margin: 0 auto 30px;
+		padding: 0 10px;
+	}
+	.side-links {
+		a {
+			display: block;
+			margin-bottom: 8px;
+		}
+	}
+	.van {
+		max-width: 300px;
 	}
 }
 .slide .inner {
@@ -19,7 +31,11 @@
 
 }
 
-@media all and (min-width: 800px) {
-
+@media all and (min-width: 700px) {
+.page {
+	.page-intro {
+		font-size: 22px;
+	}
+}
 
 }

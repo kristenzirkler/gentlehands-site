@@ -9,3 +9,8 @@ sass:
   sass_dir: scss
   style: :expanded
   line_numbers: true
+
+# Plugins
+plugins: 
+  - jekyll-redirect-from
+  - jekyll-sitemap
