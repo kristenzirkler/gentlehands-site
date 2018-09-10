@@ -21,9 +21,9 @@ body {
         }
     }
     .triangle-3 {
-        //width: 90%;
-        .triangle-down-left:after {
-            border-bottom-color: $brand-teal-light;
+        width: 90%;
+        .triangle-right:after {
+            border-left-color: $brand-teal-light;
         }
     }
     .paws {
