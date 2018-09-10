@@ -10,15 +10,12 @@
 	}
 }
 .one-animal {
+	padding-bottom: 45px;
 	p {
 		max-width: 200px;
-		margin: 0 auto;
-	}
-	img {
-		margin-right: 20px;
+		margin: 0 auto 30px;
 	}
 	&.layout-page {
-		margin-bottom: 30px;
 	}
 }
 .animal-slideshow {
@@ -36,7 +33,7 @@
 
 }
 .slider-arrow {
-	width: 25%;
+	width: 50%;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -50,7 +47,7 @@
 		text-align: right;
 	}
 	&.slider-next {
-		left: 25%;
+		left: 50%;
 	}
 }
 // Responsive
@@ -58,6 +55,18 @@
 
 }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
+.one-animal {
+	padding-bottom: 0;
+	&.layout-page {
+		padding-bottom: 30px;
+	}
+}
+.slider-arrow {
+	width: 25%;
+	&.slider-next {
+		left: 25%;
+	}
+}
 
 }
