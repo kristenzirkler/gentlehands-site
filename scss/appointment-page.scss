@@ -1,6 +1,9 @@
 .load-booking {
 	position: relative;
-	min-height: 400px;
+	min-height: 1400px;
+	margin: 30px 0;
+	border: 2px solid $main-color;
+	background-color: $white;
 }
 .booking-ctr {
 	z-index: 2;
@@ -8,12 +11,12 @@
 }
 .loading-icon {
 	font-size: 60px;
-	height: 100px;
-	line-height: 100px;
-	margin: auto;
+	height: 300px;
+	line-height: 300px;
+	margin: 0 auto;
 	display: block;
 	position: absolute;
-	top: 0; bottom: 0;
+	top: 0;
 	left: 0; right: 0;
 	text-align: center;
 	z-index: 1;
@@ -21,10 +24,28 @@
 }
 #externalBookingPluginContainer {
 	max-width: 100% !important;
+	overflow: hidden;
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
 }
-
+#externalBookingPlugin {
+	margin-top: -30px;
+	margin-left: -2px;
+	margin-right: -2px;
+	position: absolute;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	height: 100% !important;
+	max-height: 120% !important;
+}
 // Responsive
-@media all and (min-width: 420px) {
+@media all and (min-width: 480px) {
+#externalBookingPlugin {
+	width: calc(100% + 24px) !important;
+	margin-left: -12px;
+	margin-right: -12px;
+}
 
 }
 
