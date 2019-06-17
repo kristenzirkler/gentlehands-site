@@ -8,7 +8,7 @@
 
 - name: 'Tobie'
   slug: 'tobie'
-  about: '18 Weeks Old<br><br>Shihtzu Mix<br><br>Likes Exploring Under Counches & Chew Electrical Cords'
+  about: '18 Weeks Old<br><br>Shihtzu Mix<br><br>Likes to Explore Under Couches & Chew Electrical Cords'
 
 - name: 'Bailey'
   slug: 'bailey'
@@ -50,14 +50,18 @@
   slug: 'chili'
   about: '14 Years Old<br><br>Lhasa Mix<br><br>Enjoys cold tile under her belly'
 
-- name: 'Chili'
-  slug: 'chili'
-  about: '14 Years Old<br><br>Lhasa Mix<br><br>Enjoys cold tile under her belly'
-
 - name: 'Titan'
   slug: 'titan'
-  about: '4 Years Old<br><br>Cockapoo<br><br>Good luck getting him out of the pool'
+  about: '4 Years Old<br><br>Cockapoo<br><br>Good Luck Getting Him Out of the Pool'
 
 - name: 'Preston'
   slug: 'preston'
   about: '3 Years Old<br><br>Wheaton Mix<br><br>Spends his time saving his backyard from birds'
+
+- name: 'Chuy'
+  slug: 'chuy'
+  about: '14 Years Old<br><br>Chuy can still rock out.'
+
+- name: 'Precious'
+  slug: 'precious'
+  about: '9 Years Old<br><br>Food and catnip motivated.'
