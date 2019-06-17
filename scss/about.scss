@@ -4,6 +4,27 @@
 		margin-bottom: 30px;
 	}
 }
+.cbs {
+	padding: 10px 0;
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	margin: 10px 0;
+	a {
+		display: block;
+		overflow: hidden;
+	}
+	span, strong {
+		display: block;
+	}
+	strong {
+		font-size: 18px;
+	}
+	img {
+		width: 150px;
+		float: left;
+		margin: 0 20px 0 0;
+	}
+}
 // Responsive
 @media all and (min-width: 420px) {
 
