@@ -3,11 +3,21 @@
 	<h3>{{ include.title }}</h3>
 	<div class="row collapse">
 	<div class="column sm-one-half align-center">
-		<span>${{ include.bathprice }}</span>
+		<span>
+		${{ include.bathprice }}
+		{% if include.bathpricehigh %}
+		 - ${{ include.bathpricehigh }}
+		{% endif %}
+		</span>
 		<em>Bath</em>
 	</div>
 	<div class="column sm-one-half align-center">
-		<span>${{ include.groomprice }}</span>
+		<span>
+		${{ include.groomprice }}
+		{% if include.groompricehigh %}
+		 - ${{ include.groompricehigh }}
+		{% endif %}
+		</span>
 		<em>Groom</em>
 	</div>
 	</div>
