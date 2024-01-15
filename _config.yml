@@ -1,7 +1,7 @@
 highlighter: rouge
 github: [Repository metadata]
 
-baseurl: "http://www.doggroomingbygentlehands.com"
+baseurl: "https://www.doggroomingbygentlehands.com"
 livereload: true
 
 # Sass
