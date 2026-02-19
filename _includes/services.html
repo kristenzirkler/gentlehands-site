@@ -3,18 +3,16 @@
   <div class="inner">
     <h2 class="section-header"><span>Services &amp; Pricing</span></h2>
     <div class="row collapse">
+      <div class="column md-one-half">
+        {% include service-item.html slug="sm" title="Small" bathprice="75" bathpricehigh="90" groomprice="110" groompricehigh="125" %}
+      </div>
+      <div class="column md-one-half">
+        {% include service-item.html slug="md" title="Medium" bathprice="100" bathpricehigh="120" groomprice="150" groompricehigh="175" %}
+      </div>
       {% comment %}
       <div class="column md-one-forth">
         {% include service-item.html slug="cat" title="Cat" bathprice="75" groomprice="100" %}
       </div>
-      {% endcomment %}
-      <div class="column md-one-half">
-        {% include service-item.html slug="sm" title="Small" bathprice="70" bathpricehigh="85" groomprice="100" groompricehigh="110" %}
-      </div>
-      <div class="column md-one-half">
-        {% include service-item.html slug="md" title="Medium" bathprice="105" bathpricehigh="115" groomprice="120" groompricehigh="130" %}
-      </div>
-      {% comment %}
       <div class="column md-one-third">
         {% include service-item.html slug="lg" title="Large" bathprice="95" groomprice="135" %}
       </div>
